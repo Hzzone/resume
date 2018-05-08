@@ -8,9 +8,10 @@ permalink: /resume_zh-CN.html
     <title>{{ site.data.resume_zhcn.title }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="https://tuchuang-1252747889.file.myqcloud.com/googlefonts.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/resume.css">
+    <link rel="stylesheet" href="https://tuchuang-1252747889.file.myqcloud.com/resume.css">
+    <link rel="stylesheet" type="text/css" href="https://tuchuang-1252747889.file.myqcloud.com/iconfont.css">
   </head>
   <body>
     <div class="container">
@@ -26,7 +27,7 @@ permalink: /resume_zh-CN.html
         <div id="contact">
           {% for item in site.data.resume_zhcn.contact %}
           <div class="contact-item">
-            <i class="fa {{ item.icon }} aria-hidden="true></i> {{ item.text }}
+            <i class="{{ item.icon }} aria-hidden="true></i> {{ item.text }}
           </div>
           {% endfor %}
         </div>
@@ -53,27 +54,31 @@ permalink: /resume_zh-CN.html
         </div>
       </section>
 
-      <section id="skills">
+      <section id="grades">
         <div class="section-title">
-          专业技能
+          成绩
         </div>
         <div class="section-content">
-          {% for skill in site.data.resume_zhcn.skills %}
+          {% for grade in site.data.resume_zhcn.grades %}
           <div class="block">
             <div class="block-title">
-              {{ skill.title }}
+              {{ grade.title }}
+            </div>
+            <div class="block-subtitle">
+              {{ grade.notice }}
             </div>
             <div class="block-content">
-              {{ skill.items }}
+              {{ grade.scores }}
             </div>
           </div>
           {% endfor %}
         </div>
       </section>
 
+
       <section id="experience">
         <div class="section-title">
-          工作经历
+          社会实践
         </div>
         <div class="section-content">
           {% for exp in site.data.resume_zhcn.experience %}
@@ -92,48 +97,111 @@ permalink: /resume_zh-CN.html
         </div>
       </section>
 
-      <section id="projects">
+      <section id="publications">
         <div class="section-title">
-          项目
+           发表
         </div>
         <div class="section-content">
-          {% for project in site.data.resume_zhcn.projects %}
+          {% for publication in site.data.resume_zhcn.publications %}
           <div class="block">
             <div class="block-title">
-              {{ project.name }}
+              {{ publication.title }}
             </div>
             <div class="block-subtitle">
-              {{ project.contribution }}
+              {{ publication.description }}
             </div>
             <div class="block-content">
-              {{ project.description }}
+              {{ publication.content }}
             </div>
           </div>
           {% endfor %}
         </div>
       </section>
 
-      <section id="languages">
+      <section id="experience">
         <div class="section-title">
-          语言
+          学业获奖
         </div>
-        <div class="section-content section-flex">
-          {% for language in site.data.resume_zhcn.languages %}
-          <div class="block block-square">
+        <div class="section-content">
+          {% for exp in site.data.resume_zhcn.academic_prize %}
+          <div class="block">
             <div class="block-title">
-              {{ language.name }}
+              {{ exp.title }}
             </div>
-            <div class="block-content">
-              {{ language.proficiency }}
+            <div class="block-subtitle">
+              {{ exp.description }}
             </div>
           </div>
           {% endfor %}
+        </div>
+      </section>
+
+     <section id="experience">
+        <div class="section-title">
+          比赛获奖
+        </div>
+        <div class="section-content">
+          {% for exp in site.data.resume_zhcn.contest_prize %}
+          <div class="block">
+            <div class="block-title">
+              {{ exp.title }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+ 
+
+
+      <section id="projects">
+        <div class="section-title">
+          校内项目
+        </div>
+        <div class="section-content">
+          <div class="block">
+            <div class="block-title">
+              国家级大创(立项人)
+            </div>
+            <div class="block-subtitle">
+              互联网+基于云计算的尿液与血糖分析仪, 2017年
+            </div>
+            <div class="block-content">
+              大二时申报的大创项目，被立为国家级，现已结题，我是立项人。由软件、电子、临床四名学生构成。主要做的是一个为尿毒症、糖尿病患者提供的一个尿液、血液检测和分析的硬件和软件，方面在家进行检测等等。代码开源在<a href="https://github.com/Hzzone/niaodaifu">Github</a>，主要相关技术有Spring Boot，Mybatis等。
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-title">
+          专业技能
+        </div>
+        <div class="section-content">
+          {% for skill in site.data.resume_zhcn.skills %}
+          <div class="block">
+            <div class="block-title">
+              {{ skill.title }}
+            </div>
+            <div class="block-content">
+              {{ skill.items }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-title">
+          其他项目
+          <div class="block-content">
+              开源在GitHub，提供源码和相关介绍
+          </div>
         </div>
       </section>
 
     </div>
     <footer>
-      Made with <i class="fa fa-heart aria-hidden="true></i> by <a href="https://github.com/crispgm/resume">David Zhang</a> ( <a href="javascript:window.print()">PDF</a> )
+      Made with <i class="fa fa-heart aria-hidden="true></i> by <a href="https://github.com/Hzzone">Hzzone</a> ( <a href="javascript:window.print()">PDF下载</a> )
     </footer>
   </body>
 </html>
