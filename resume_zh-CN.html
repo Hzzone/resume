@@ -8,6 +8,7 @@ permalink: /resume_zh-CN.html
     <title>{{ site.data.resume_zhcn.title }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
     <link href="https://tuchuang-1252747889.file.myqcloud.com/googlefonts.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://tuchuang-1252747889.file.myqcloud.com/resume.css">
@@ -32,7 +33,18 @@ permalink: /resume_zh-CN.html
           {% endfor %}
         </div>
       </header>
-      
+      <section id="education">
+        <div class="section-title">
+         自我介绍
+        </div>
+        <div class="section-content">
+          <div class="block">
+            <div class="block-content">
+              {{ site.data.resume_zhcn.self_introduction }}
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="education">
         <div class="section-title">
           教育
@@ -135,7 +147,6 @@ permalink: /resume_zh-CN.html
           {% endfor %}
         </div>
       </section>
-
      <section id="experience">
         <div class="section-title">
           比赛获奖
@@ -198,6 +209,31 @@ permalink: /resume_zh-CN.html
           </div>
         </div>
       </section>
+
+
+      {% for items in site.data.resume_zhcn.projects %}
+      <section id="projects">
+        <div class="section-title">
+          {{ items.name }}
+        </div>
+        <div class="section-content">
+          {% for item in items.project %}
+          <div class="block">
+            <div class="block-title">
+              {{ item.title }}
+            </div>
+            <div class="block-subtitle">
+              <a href="{{ item.github }}">Github链接</a> |
+              {{ item.description }}
+            </div>
+            <div class="block-content">
+              {{ item.content }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+      {% endfor %}
 
     </div>
     <footer>
