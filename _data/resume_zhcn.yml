@@ -2,15 +2,15 @@ title: "Hzzone's Résumé"
 name: "黄智忠"
 jobtitle: "wants to be talented&positive."
 contact:
-  - icon: fa fa-envelope
+  - title: Email
     text: <a href="mailto:hzzone.scu@foxmail.com">hzzone.scu@foxmail.com</a>
-  - icon: fa fa-globe
-    text: <a href="https://hzzone.github.io/">博客</a>
-  - icon: fa fa-github
-    text: <a href="https://github.com/Hzzone">Github</a>
-  - icon: iconfont icon-zhihu0
-    text: <a href="https://github.com/Hzzone">知乎</a>
-self_introduction: "诸事不顺"
+  - title: Blog
+    text: <a href="https://hzzone.github.io/">https://hzzone.github.io</a>
+  - title: Github
+    text: <a href="https://github.com/Hzzone">https://github.com/Hzzone</a>
+  - title: Home Page
+    text: <a href="https://hzzone.io/">https://hzzone.io</a>
+self_introduction: "我是四川大学软件学院软件工程2015级创新班学生。<br>我对<strong>机器学习</strong>、<strong>深度学习</strong>解决实际问题很有兴趣，并且有相关的实践项目，例如医学图像分析、姿态估计、人脸识别等，这些在我的GitHub中都有公开的源码和相应的演示视频。我非常喜欢开放自己的代码，享受和别人讨论的乐趣，在我的相关Repo中，都有非常详细的训练、测试过程！在我的简历后半部分，介绍了我开源在GitHub，比较有趣的相关项目。<br>除了代码以外，我的学业成绩在年级前列，前五个学期在年级前<strong>5%</strong>(11/265)，其中综合排名~5/265。大一时我获得了<strong>国家奖学金</strong>，大二获得<strong>国家励志奖学金</strong>，并且在大二时担任了学院<strong>机器智能协会副会长</strong>。<br>在大二以后，我作为立项人成功申报一项<strong>国家级大创项目</strong>，现已顺利结题。并且多次参加大学生计算机相关比赛，有国家级、省级、校级若干奖项。在大二暑假期间，我受四川大学计算机学院张意老师指导，与四川大学华西基础医学与法医学院一位博生生学姐合作名为<strong> Forensic Age Estimation for Pelvic X-ray Images using Deep Learning </strong>的论文，正在投稿中。<br>在平常的生活中，我喜欢逛GitHub、v2ex等技术论坛，非常喜欢学习新技术。"
 grades:
   - title: "英语成绩"
     notice: "四、六级"
@@ -31,7 +31,7 @@ skills:
   - title: "框架"
     items: "Spring boot, 微信小程序, Django, 都有相关项目"
   - title: "其它"
-    items: "git, vim, shell, 熟悉Linux(主要Ubuntu)"
+    items: "git, vim, shell, Markdown, 熟悉Linux(主要Ubuntu)"
 experience:
   - title: "四川大学软件学院机器智能协会副会长"
     duration: "2016/06 - 2017/09"
@@ -53,7 +53,7 @@ contest_prize:
 publications:
   - title: "论文"
     description: "2018, 《Forensic Age Estimation for Pelvic X-ray Images using Deep Learning》"
-    content: "正在投稿..."
+    content: "未发表"
   - title: "软件著作权"
     description: "基于云计算的尿液与血糖分析仪V1.0, 2017年"
     content: "在做大创的过程中申请的软件著作权"
