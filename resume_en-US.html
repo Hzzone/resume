@@ -1,11 +1,11 @@
 ---
 layout: null
-permalink: /resume_zh-CN.html
+permalink: /resume_en-US.html
 ---
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ site.data.resume_zhcn.title }}</title>
+    <title>{{ site.data.resume_enus.title }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no" />
@@ -16,42 +16,41 @@ permalink: /resume_zh-CN.html
       <header>
         <div id="name-wrapper">
           <div id="fullname">
-            {{ site.data.resume_zhcn.name }}
+            {{ site.data.resume_enus.name }}
           </div>
           <div id="jobtitle">
-            {{ site.data.resume_zhcn.jobtitle }}
+            {{ site.data.resume_enus.jobtitle }}
           </div>
         </div>
         <div id="contact">
-          {% for item in site.data.resume_zhcn.contact %}
+          {% for item in site.data.resume_enus.contact %}
           <div class="contact-item">
             {{ item.title }}: {{ item.text }}
           </div>
           {% endfor %}
           <div class="contact-item">
-            Simplified Chinese | <a href="resume_en-US.html">English</a>
+            <a href="index.html">Simplified Chinese</a> | English
           </div>
-
         </div>
       </header>
       <section id="education">
         <div class="section-title">
-         自我介绍
+         Summary
         </div>
         <div class="section-content">
           <div class="block">
             <div class="block-content">
-              {{ site.data.resume_zhcn.self_introduction }}
+              {{ site.data.resume_enus.self_introduction }}
             </div>
           </div>
         </div>
       </section>
       <section id="education">
         <div class="section-title">
-          教育
+          Education
         </div>
         <div class="section-content">
-          {% for edu in site.data.resume_zhcn.education %}
+          {% for edu in site.data.resume_enus.education %}
           <div class="block">
             <div class="block-title">
               {{ edu.university }}
@@ -69,10 +68,10 @@ permalink: /resume_zh-CN.html
 
       <section id="grades">
         <div class="section-title">
-          成绩
+          Grades
         </div>
         <div class="section-content">
-          {% for grade in site.data.resume_zhcn.grades %}
+          {% for grade in site.data.resume_enus.grades %}
           <div class="block">
             <div class="block-title">
               {{ grade.title }}
@@ -91,10 +90,10 @@ permalink: /resume_zh-CN.html
 
       <section id="experience">
         <div class="section-title">
-          社会实践
+          Experience
         </div>
         <div class="section-content">
-          {% for exp in site.data.resume_zhcn.experience %}
+          {% for exp in site.data.resume_enus.experience %}
           <div class="block">
             <div class="block-title">
               {{ exp.title }}
@@ -112,10 +111,10 @@ permalink: /resume_zh-CN.html
 
       <section id="publications">
         <div class="section-title">
-           发表
+           Publications
         </div>
         <div class="section-content">
-          {% for publication in site.data.resume_zhcn.publications %}
+          {% for publication in site.data.resume_enus.publications %}
           <div class="block">
             <div class="block-title">
               {{ publication.title }}
@@ -133,10 +132,10 @@ permalink: /resume_zh-CN.html
 
       <section id="experience">
         <div class="section-title">
-          学业获奖
+          Academic
         </div>
         <div class="section-content">
-          {% for exp in site.data.resume_zhcn.academic_prize %}
+          {% for exp in site.data.resume_enus.academic_prize %}
           <div class="block">
             <div class="block-title">
               {{ exp.title }}
@@ -150,10 +149,10 @@ permalink: /resume_zh-CN.html
       </section>
      <section id="experience">
         <div class="section-title">
-          比赛获奖
+          Competition
         </div>
         <div class="section-content">
-          {% for exp in site.data.resume_zhcn.contest_prize %}
+          {% for exp in site.data.resume_enus.contest_prize %}
           <div class="block">
             <div class="block-title">
               {{ exp.title }}
@@ -167,18 +166,18 @@ permalink: /resume_zh-CN.html
 
       <section id="projects">
         <div class="section-title">
-          校内项目
+          Projects
         </div>
         <div class="section-content">
           <div class="block">
             <div class="block-title">
-              国家级大创(立项人)
+              National Training Programs of Innovation and Entrepreneurship for Undergraduates(Captain)
             </div>
             <div class="block-subtitle">
-              互联网+基于云计算的尿液与血糖分析仪, 2017年
+              Internet plus urine and blood glucose analyzer based on Cloud Computing, 2017
             </div>
             <div class="block-content">
-              大二时申报的大创项目，被立为国家级，现已结题，我是立项人。由软件、电子、临床四名学生构成。主要做的是一个为尿毒症、糖尿病患者提供的一个尿液、血液检测和分析的硬件和软件，方面在家进行检测等等。代码开源在<a href="https://github.com/Hzzone/niaodaifu">Github</a>，主要相关技术有Spring Boot，Mybatis等。
+              It is composed of four students from Software Engineering, Electronics and Clinical School. The project is mainly aimed at a urine and blood test and analysis hardware and software for uremic and diabetic patients. Source Code publiced in <a href="https://github.com/Hzzone/niaodaifu">Github</a>, the main related technologies are Spring Boot, Mybatis and so on.
             </div>
           </div>
         </div>
@@ -186,10 +185,10 @@ permalink: /resume_zh-CN.html
 
       <section id="skills">
         <div class="section-title">
-          专业技能
+          Pro-Skills
         </div>
         <div class="section-content">
-          {% for skill in site.data.resume_zhcn.skills %}
+          {% for skill in site.data.resume_enus.skills %}
           <div class="block">
             <div class="block-title">
               {{ skill.title }}
@@ -204,15 +203,15 @@ permalink: /resume_zh-CN.html
 
       <section id="skills">
         <div class="section-title">
-          其他项目
+          Other Projects
           <div class="block-content">
-              开源在GitHub，提供源码和相关介绍
+              Open source at GitHub, providing source code and related introduction
           </div>
         </div>
       </section>
 
 
-      {% for items in site.data.resume_zhcn.projects %}
+      {% for items in site.data.resume_enus.projects %}
       <section id="projects">
         <div class="section-title">
           {{ items.name }}
@@ -224,13 +223,13 @@ permalink: /resume_zh-CN.html
               {{ item.title }}
             </div>
             <div class="block-subtitle">
-              <a href="{{ item.github }}">Github链接</a> |
+              <a href="{{ item.github }}">Github</a> |
               {{ item.description }}
             </div>
-            <div class="block-content">
+<!--             <div class="block-content">
               {{ item.content }}
             </div>
-          </div>
+ -->          </div>
           {% endfor %}
         </div>
       </section>
@@ -238,7 +237,7 @@ permalink: /resume_zh-CN.html
 
     </div>
     <footer>
-      Made <i class="fa fa-heart aria-hidden="true></i> by <a href="https://hzzone.io/">Hzzone</a> ( <a href="https://hzzone.io/ZhizhongHuang_resume_zh-CN.pdf">PDF下载</a> )
+      Made <i class="fa fa-heart aria-hidden="true></i> by <a href="https://hzzone.io/">Hzzone</a> ( <a href="https://hzzone.io/ZhizhongHuang_resume_en-US.pdf">PDF下载</a> )
     </footer>
   </body>
 </html>
